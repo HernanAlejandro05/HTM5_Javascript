@@ -1,0 +1,59 @@
+body {
+  background: #0364f5;
+}
+
+header{
+background: #0364f5;
+
+}
+
+header, footer{
+  background: #0364f5;
+  clear: both; /*limpia los float:letf, sala la linea como invisible*/
+  padding: 10px 0px;
+  text-align: center;
+}
+
+h2, h3, h4, a{
+  color: white;
+  text-decoration: none;
+}
+.fill {
+  background-image: url('images/gta5.png');
+  position: relative;
+  height: 150px;
+  width: 150px;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.empty {
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  border: solid 3px salmon;
+  background: white;
+}
+
+.hold {
+  border: solid #ccc 4px;
+}
+.hovered {
+  background: #f4f4f4;
+  border-style: dashed;
+}
+
+.invisible{
+  display: none;
+}
+#div1 {
+  width: 450px;
+  height: 125px;
+  padding: 10px;
+  border: 2px solid #aaaaaa;
+    
+}
+
+

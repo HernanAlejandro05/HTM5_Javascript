@@ -1,0 +1,160 @@
+.container{
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.box{
+display: inline-block;
+margin: 80px;
+padding:10px;
+text-align: center;
+vertical-align: top;
+width: 150px;
+}
+
+#caja1, #caja2{
+  border: 1px solid #333;
+  height: 150px;
+  width: 100%;
+ }
+
+ h3{
+   font-family: arial;
+   font-size: 20px;
+ }
+
+
+
+ .detectar{
+   background: #ddd;
+   border: 3px dashed #aaa !important;
+ }
+
+ * {
+  margin:0;
+  padding: 0;
+}
+
+body {
+  background: #0364f5;
+  text-align:justify;
+}
+
+header{
+  background-image: url(images/wallpaper2.jpg);
+  text-align: center;
+}
+
+header, .principal, footer{
+  width: 90%;
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+header div{
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+header nav {
+  background: #0206fd; 
+  overflow: hidden; /* Oculta el contenido que sobre pasa el contenedor
+            Limpia los float:left*/
+}
+
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  float: left;
+}
+
+header nav ul li a{
+  padding: 10px 20px;
+  display: block;  /*aplica el padding arriba y abajo */
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color:#00FF00;
+}
+
+.principal .articles {
+  width: 68.5%;
+  float: left;
+  margin-right:1.5% 
+}
+
+.principal .articles article{
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+ aside {
+  width: 30%;
+  background: rgba(255, 255, 255,0.3);
+  float: left;
+  padding: 20px;
+  box-sizing: border-box; /*averiguar este propiedad*/
+  margin-bottom: 15px;
+  color:white;
+  overflow: hidden;
+  }
+
+footer{
+  background: #0206fd;
+  color: white;
+  clear: both; /*limpia los float:letf, sala la linea como invisible*/
+  padding: 10px 0px;
+  text-align: center;
+}
+
+h2, h3, h4, a{
+  color: white;
+  text-decoration: none;
+}
+
+#encabezado{
+  height: 200px;
+}
+
+
+#sidebar{
+position: fixed;
+width: 200px;
+height: 100%;
+background: #151719;
+left: -200px;
+transition: all 500ms linear;
+  }
+#sidebar.active{
+left:0px;
+  }
+#sidebar ul li{
+color: rgba(230,230,230,0.9);
+padding: 15px 10px;
+border-bottom: 1px solid rgba(100,100,100,0.3);
+  }
+#sidebar .toggle-btn{
+position: absolute;
+left: 230px;
+top: 20px;
+  }
+#sidebar .toggle-btn span{
+display: block;
+width: 30px;
+height: 5px;
+background: #151719;
+margin: 5px 0px;
+  }
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">
+            <title>Geolocalización</title>
+            <link href="style.css" rel="stylesheet" type="text/css" />
+             <link href="estiloFormulario.css" rel="stylesheet" type="text/css" />
+
+            <script src="https://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    </head>
+<body>
+       <div>
+    
+    <div id="mapa" style="width:700px;height:500px;" ></div>
+ <form class="form" action="" >
+          <input type="number" name="Latitud" placeholder="Latitud" id="lati">
+          <input type="number" name="Longitud" placeholder="Longitud" id="longi">
+     
+          <input type="button" value="Obtener Ubicacion" onclick="getGeo()">
+      </form>
+
+    <script type="text/javascript">
+        
+        function getGeo(){
+            var lati = document.getElementById("lati").value;
+            var long = document.getElementById("longi").value;
+            
+            console.log(lati);
+            
+            //var lati = -2.907054;
+            //var long =  -79.005879;
+
+        var latlng = new google.maps.LatLng(lati,  long);
+
+        // definimos valor por defecto
+        var myOptions = {
+            zoom: 14,
+            center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+ 
+        // generamos el mapa
+        var map = new google.maps.Map(document.getElementById("mapa"), myOptions);
+ 
+        // añadimos una marca
+        var marker = new google.maps.Marker({
+            position: latlng,
+            draggable: true
+        });
+       
+        marker.setMap(map);
+        popup.open(map);
+            
+        }
+
+    </script>
+      </div>
+
+ <footer>
+  <h4><a href="index.html" title="Regresar al pagina principal">REGRESAR</a></h4>
+</footer>
+</body>
+</html>
